@@ -1,0 +1,388 @@
+/** global **/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.href-point{
+    position: absolute;
+    top: -60px;
+}
+
+/** Scroll-bar **/
+
+body::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    background-image: linear-gradient(135deg,#004777,#00afb5);
+    /* display: none;   */
+    /* Ocultar scroll */
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+body::-webkit-scrollbar-thumb {
+    background: #58bc82;
+    border-radius: 4px;
+}
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #00afb5;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Cambiamos el fondo cuando esté en active */
+body::-webkit-scrollbar-thumb:active {
+    background-color: #00afb5;
+}
+
+/** nav **/
+.bg-nav{
+    transition: all ease 0.3s;
+}
+
+.navbar-options{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-link{
+    color: #ffffff;
+}
+
+.active{
+    border-bottom: 4px solid #fff;
+}
+
+.slideUp{
+    top:-56px;
+    animation: slideUp 1.5s forwards;
+}
+
+
+/** hero **/
+.hero{
+    height: 100vh;
+    background-color: #fff;
+    background-image: url('../images/hero-dark.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.img-hero{
+    width: auto;
+    height: 256px;
+}
+
+.hero-title{
+    font-size: 1.4em;
+    /* text-align: center; */
+    width: 100%;
+    color: #00b8f5;
+    font-weight: 700;
+}
+
+.hero-subTitle{
+    text-shadow: 1px 1px #030303;
+    font-size: 20px;
+    text-align: center;
+}
+
+.name-color{
+    background-image: none;
+    -webkit-text-fill-color: #00afb5;
+    background-image: linear-gradient(135deg,#00b8f5, #58bc82,#58bc82);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/**  About **/
+
+.about{
+    background-color: #004777;
+    background-image: linear-gradient(135deg,#004777,#00afb5);
+    padding-bottom: 8em;
+}
+
+.about-ref {
+    display: block;
+    position: relative;
+    top: -60px;
+    visibility: hidden;
+}
+
+.about-description{
+    font-size: 1.5em;
+}
+
+.triangle{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0; 
+    height: 0; 
+
+    border-top: 20px solid transparent;
+    border-left: 100vw solid transparent;
+    
+    border-bottom: 100px solid #001F29;
+}
+
+.padding{
+    padding-top: 8em;
+    padding-bottom: 4em;
+}
+
+/** percentages abilities **/
+
+.skills-ref{
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.prec{
+    top: 8px;
+    position: relative;
+    font-size: 13px;
+    color:#000;
+    font-weight: 600;
+}
+
+.circle{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #E6F4F7;
+}
+
+.active-border{
+    position: relative;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+
+    background-color:#A2ECFB;
+    
+   
+}
+
+.Javascript{
+    
+background-image:
+        linear-gradient(-90deg, #39B4CC 50%, transparent 50%),
+        linear-gradient(240deg, transparent 50%, #39B4CC 50%);
+}
+.React{
+    
+background-image:
+        linear-gradient(-90deg, #39B4CC 50%, transparent 50%),
+        linear-gradient(220deg, transparent 50%, #39B4CC 50%);
+}
+.CSS{
+    
+background-image:
+        linear-gradient(-90deg, #39B4CC 50%, transparent 50%),
+        linear-gradient(230deg, transparent 50%, #39B4CC 50%);
+}
+.Nodejs{
+    
+background-image:
+        linear-gradient(-90deg, #39B4CC 50%, transparent 50%),
+        linear-gradient(220deg, transparent 50%, #39B4CC 50%);
+}
+.SQL{
+    
+background-image:
+        linear-gradient(-90deg, #39B4CC 50%, transparent 50%),
+        linear-gradient(200deg, transparent 50%, #39B4CC 50%);
+}
+
+/** projects **/
+
+.projects{
+    background-color: #001F29;
+    padding-top: 2em;
+    padding-bottom: 6em;
+}
+
+.project-ref {
+    display: block;
+    position: relative;
+    top: -20px;
+    margin-top: 200;
+    visibility: hidden;
+}
+
+.project-title{
+    font-size: 3em;
+    font-weight: 700;
+}
+.project-titsubTitle{
+    text-align: center;
+}
+
+.project-image{
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 10px  #003d52, -2px -2px 10px  #003d52;
+    
+}
+
+.button-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap:1em
+}
+/** Contact **/
+
+.contact{
+    background-color: #004777;
+    background-image: linear-gradient(135deg,#004777,#00afb5);
+    padding-top: 150px;
+    padding-bottom: 80px;
+    /* height: 500px; */
+}
+
+.triangle-invered{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0; 
+    height: 0; 
+
+    border-bottom: 20px solid transparent;
+    border-right: 100vw solid transparent;
+    
+    border-top: 150px solid #001F29;
+}
+
+
+
+.fadeIn{
+    animation-name: fadeIn;
+    animation-duration: 2s;  
+}
+.slideIn{
+    animation: slide 2s forwards;
+}
+.navbar-brand{
+    margin-right: 0;
+}
+.navbar-brand-icon{
+    display: none;
+}
+
+/** footer **/
+
+.social-icons{
+    transition: all 0.3s ease;
+}
+
+.social-icons:hover{
+    animation: moveUp 0.3s forwards alternate;
+}
+
+
+@media (max-width: 576px) { 
+    .slideUp{
+        top:-87px;
+    }
+    
+    .about-ref {
+        top: -87px;
+    }
+    .project-ref {
+        top: -60px;
+    }
+    .navbar-brand{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+    .nav-item{
+        font-size: 0.9em;
+    }
+    .navbar-nav{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .href-point{
+        top: -60px;
+    }
+    .about-section{
+        width: 100%;
+        min-width: 100%;
+    }
+    .btn-responsive{
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+    }
+
+ }
+
+ /* // Medium devices (tablets, 768px and up) */
+ @media (min-width: 576px) { 
+    .hero-title{
+        font-size: 1.5em;
+    }
+    .about-section{
+        width: 550px;
+        min-width: 550px;
+    }
+ }
+
+@media (min-width: 768px) { 
+    .about-section{
+        width: 650px;
+        min-width: 650px;
+    }
+    .hero-title{
+        font-size: 2.5em;
+    }
+ }
+
+ @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes moveUp {
+    100% { transform: translateY(-5px); }
+    }
+  
+  @keyframes slide {
+    100% { margin-right: 0; }
+    }
+
+  @keyframes slideUp {
+    100% { top: 0; }
+    }
+
+    @keyframes rotate {
+        from {transform: rotateY(90deg);}
+        to {transform: rotateY(0deg);}
+      }
+
+      @keyframes rotateVertical {
+        from {transform: rotateX(90deg);}
+        to {transform: rotateX(0deg);}
+      }
+
+      @keyframes VerticalAppear {
+        from {height: 0;}
+        to {height: 300px;}
+      }
